@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Business</title>
+    <style>
+        :root {
+            --bg-start: #0f172a;
+            --bg-end: #0ea5a4;
+            --card-bg: rgba(255,255,255,0.06);
+            --text-color: #ffffff;
+            --accent: rgba(255,255,255,0.12);
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(135deg, var(--bg-start) 0%, #1e3a8a 40%, var(--bg-end) 100%);
+            color: var(--text-color);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            padding: 2rem;
+            gap: 1rem;
+        }
+
+		/* Home link — ensure visible white color */
+		a.home-link {
+			color: #ffffff;
+			text-decoration: none;
+		}
+
+        .container {
+            max-width: 720px;
+            width: 100%;
+        }
+
+        .site-header {
+            margin: 0 0 0.25rem 0;
+            text-align: left;
+        }
+
+            .site-header h1 {
+                margin: 0;
+                font-size: 1.75rem;
+                line-height: 1.2;
+                letter-spacing: -0.01em;
+            }
+
+        .card {
+            background: linear-gradient(180deg, rgba(255,255,255,0.03), transparent);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 8px 30px var(--accent);
+            border: 1px solid rgba(255,255,255,0.06);
+            text-align: left;
+        }
+
+        .process {
+            font-size: 1.25rem;
+            line-height: 1.6;
+            letter-spacing: -0.01em;
+            margin: 0 0 0.5rem 0;
+            word-break: break-word;
+        }
+
+        .card p {
+            margin: 0.25rem 0;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* Indent specific paragraph */
+        .card .indented {
+            margin-left: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .site-header h1 {
+                font-size: 2rem;
+            }
+
+            .process {
+                font-size: 1.5rem;
+            }
+
+            .card p {
+                font-size: 1.05rem;
+            }
+
+            .card .indented {
+                margin-left: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- moved Home link into the body and applied class to ensure visible white color -->
+    <a href="index.html" class="home-link" aria-label="Home">Home</a>
+
+    <div class="container">
+        <header class="site-header" role="banner">
+            <h1>Business</h1>
+        </header>
+    </div>
+
+    <div class="container">
+        <main class="card" role="main" aria-labelledby="process-heading">
+            <h2 id="process-heading" class="process">Process.</h2>
+            <p>1. <strong>Purchase Kicker Pair</strong> </p>
+            <p class="indented">No registration fee. Instead, become a "DEALER" by purchasing a KICKER PAIR, 2 pairs of any shoes.</p>
+            <p>2. <strong>Account Activation</strong> </p>
+            <p class="indented">Buying the Kicker Pair grants you an official dealer account, a lifetime 25% shoes discount and free training.</p>
+            <p>3. <strong> Build a Binary Netwotk</strong></p>
+            <p class="indented">The networking framework works in a binary system and required to build and manage two sales teams. Group 1 Sales Team (left) and Group 2 Sales Team (right).</p>
+            <p>4. Sponsor and invite to be a dealer</p>
+        </main>
+    </div>
+
+    <div class="container">
+        <main class="card" role="region" aria-labelledby="income-heading">
+            <h2 id="income-heading" class="process">Income (25%).</h2>
+            <p>1. Retail profit (Direct Selling)</p>
+            <p class="indented">Incomde: Net 25% profit. Dealers buy products at a 25% wholesale discount and sell the to customer at the Standard Retail Price. No monthly sales quotas to maintain discount.</p>
+            <p>2. Online commission</p>
+            <p class="indented">The system will provide the dealer a unique online store.</p>
+            <p>3. Sales commission (Direct referral)</p>
+            <p class="indented">Income: P500 per direct referral. Every time you personally sponsor or sell a Kicker Pair to a new dealer, you receive a direct cash incentive.</p>
+            <p>4. Group Sales override commission</p>
+            <p class="indented">Income: P1,500 per matched pair (up to a maximum of P15,000 per day or P300,000 per month). The core of networking income stream. Whenever the system detects one new Kicker Pair Sale in Group 1 and another in Group 2, it creates a "sales match" or "pair". It doesnt matter if you personally invited them or they were brought by downline team.</p>
+            <p>5. Residual Rebates (6%)</p>
+            <p class="indented">3% - 1st Level</p>
+            <p class="indented">2% - 2nd Level</p>
+            <p class="indented">1% - 3rd Level</p>
+            <p class="indented">6% total split across 3 tiers. You earned a percentage of residual income based on the repeat, non Kicker Pair by your downline network up to 3rd level.</p>
+        </main>
+    </div>
+
+</body>
+</html>

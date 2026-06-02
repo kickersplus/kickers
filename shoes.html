@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Kickers Plus Shoes</title>
+	<style>
+		:root {
+			--bg-1: #a8edea;
+			--bg-2: #fed6e3;
+			--card-bg: rgba(255,255,255,0.9);
+			--accent: #0b84ff;
+			--muted: #444;
+		}
+
+		html, body {
+			min-height: 100vh;
+			margin: 0;
+			font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+			background: linear-gradient(135deg, var(--bg-1) 0%, var(--bg-2) 100%);
+			color: #111;
+			display: flex;
+			flex-direction: column;
+		}
+
+		a {
+			display: inline-block;
+			padding: 1rem;
+			text-decoration: none;
+			color: inherit;
+		}
+
+		main {
+			flex: 1;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 1rem;
+		}
+
+		.container {
+			width: 100%;
+			max-width: 1100px;
+			padding: 1rem;
+			background: linear-gradient(180deg, rgba(255,255,255,0.8), rgba(255,255,255,0.7));
+			border-radius: 12px;
+			box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+		}
+
+		header.page-header {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 1rem;
+			margin-bottom: 1rem;
+		}
+
+		h1 {
+			margin: 0;
+			font-size: 1.25rem;
+			color: var(--muted);
+		}
+
+		.products {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+			gap: 1rem;
+			align-items: start;
+		}
+
+		.product {
+			background: var(--card-bg);
+			border-radius: 10px;
+			padding: 0.75rem;
+			text-align: center;
+			box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+		}
+
+			.product img {
+				width: 100%;
+				height: 200px;
+				object-fit: cover;
+				border-radius: 8px;
+				display: block;
+				margin-bottom: 0.5rem;
+			}
+
+			.product h3 {
+				margin: 0.25rem 0;
+				font-size: 1rem;
+				color: #071428;
+			}
+
+		.price {
+			color: #0b6b4f;
+			font-weight: 600;
+			margin-bottom: 0.5rem;
+		}
+
+		/* Footer / disclaimer styles */
+		.site-footer {
+			width: 100%;
+			background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.5));
+			border-top: 1px solid rgba(0,0,0,0.04);
+		}
+
+		.disclaimer {
+			max-width: 1100px;
+			margin: 0 auto;
+			padding: 0.5rem 1rem;
+			text-align: center;
+			/* Reduced font size per request */
+			font-size: 0.75rem;
+			line-height: 1.4;
+			color: var(--muted);
+			opacity: 0.95;
+		}
+
+		/* Slightly smaller on very small screens */
+		@media (max-width: 420px) {
+			.disclaimer {
+				font-size: 0.7rem;
+			}
+		}
+	</style>
+</head>
+<body>
+	<a href="index.html">Home</a>	
+	<main>
+		<div class="container" role="main">
+			<header class="page-header">
+				<h1>Available Shoes</h1>
+				<div class="contact" aria-label="Contact for orders">
+					<span>For orders DM 0995-3970640</span>
+				</div>
+			</header>
+
+			<section class="products" aria-label="Product list">
+				<article class="product">
+					<img src="adizero adios pro 4 orange1(3600).jpg" alt="Adizero Adios Pro 4 shoe">
+					<h3>Adizero Adios Pro 4 Orange</h3>
+					<div class="price">Php 3,600.00</div>
+				</article>
+
+				<article class="product">
+					<img src="adizero adios pro 4 white 4(3600).jpg" alt="Adizero Adios Pro 4 shoe">
+					<h3>Adizero Adios Pro 4 White</h3>
+					<div class="price">Php 3,600.00</div>
+				</article>
+
+				<article class="product">
+					<img src="adizeros adios tokyo 4a(3600).jpg" alt="Adizero Adios 4 shoe">
+					<h3>Adizero Adios Tokyo 4 </h3>
+					<div class="price">Php 3,600.00</div>
+				</article>
+
+				<article class="product">
+					<img src="adizero adios pro 5 red1(3600).jpg" alt="Adizero Adios Pro 5 shoe">
+					<h3>Adizero Adios Pro 5 Pink</h3>
+					<div class="price">Php 3,600.00</div>
+				</article>
+
+				<article class="product">
+					<img src="adizero adios pro 5 white1(3600).jpg" alt="Adizero Adios Pro 5 shoe">
+					<h3>Adizero Adios Pro 5 White</h3>
+					<div class="price">Php 3,600.00</div>
+				</article>
+
+				<article class="product">
+					<img src="adizero evo sl EXO 1(3200).jpg" alt="Adizero Evo SL EXO shoe">
+					<h3>Adizero Evo SL EXO</h3>
+					<div class="price">Php 3,600.00</div>
+				</article>
+
+				<article class="product">
+					<img src="alphafly habanero1(3200).jpg" alt="Alphafly Habanero shoe">
+					<h3>Alphafly Habanero</h3>
+					<div class="price">Php 3,200.00</div>
+				</article>
+
+				<article class="product">
+					<img src="Asics pickle ball1(4000).png" alt="Asics Pickle Ball shoe">
+					<h3>Asics Pickle Ball Black</h3>
+					<div class="price">Php 4,000.00</div>
+				</article>
+
+				<article class="product">
+					<img src="golden goose 1(5000).png" alt="Golden Goose Ball shoe">
+					<h3>Golden Goose </h3>
+					<div class="price">Php 5,000.00</div>
+				</article>
+
+				<article class="product">
+					<img src="gt cut future 1(3600).jpg" alt="GT Cut Future shoe">
+					<h3>GT Cut Future </h3>
+					<div class="price">Php 3,600.00</div>
+				</article>
+
+				<article class="product">
+					<img src="harden v9a(3600).jpg" alt="Harden V9 shoe">
+					<h3>Harden V9</h3>
+					<div class="price">Php 3,600.00</div>
+				</article>
+
+				<article class="product">
+					<img src="ja morant 3a(4000).jpg" alt="Ja Morant 3 shoe">
+					<h3>Ja Morant 3 Pink</h3>
+					<div class="price">Php 4,000.00</div>
+				</article>
+
+				<article class="product">
+					<img src="ja morant 3c(4000).jpg" alt="Ja Morant 3 shoe">
+					<h3>Ja Morant 3 White</h3>
+					<div class="price">Php 4,000.00</div>
+				</article>
+
+				<article class="product">
+					<img src="jordan 1 retro high union1(3600).jpg" alt="Jordan 1 Retro Union shoe">
+					<h3>Jordan 1 Retro Union</h3>
+					<div class="price">Php 3,600.00</div>
+				</article>
+
+				<article class="product">
+					<img src="jordan 1 retro high2(3600).jpg" alt="Jordan 1 Retro shoe">
+					<h3>Jordan 1 Retro High Cut</h3>
+					<div class="price">Php 3,600.00</div>
+				</article>
+
+				<article class="product">
+					<img src="jordan 1 retro low gym red1(3600).jpg" alt="Jordan 1 Retro shoe">
+					<h3>Jordan 1 Retro Gym Red Low Cut</h3>
+					<div class="price">Php 3,600.00</div>
+				</article>
+
+				<article class="product">
+					<img src="kobe 4 protro 1(4000).jpg" alt="Kobe 4 Protro shoe">
+					<h3>Kobe 4 Protro</h3>
+					<div class="price">Php 4,000.00</div>
+				</article>
+
+				<article class="product">
+					<img src="kobe 5 protro year of the snake2(4000).jpg" alt="Kobe 5 Protro shoe">
+					<h3>Kobe 5 Protro Year of the Snake Red</h3>
+					<div class="price">Php 4,000.00</div>
+				</article>
+
+				<article class="product">
+					<img src="kobe 5 protro year of the snake3(4000).jpg" alt="Kobe 5 Protro shoe">
+					<h3>Kobe 5 Protro Year of the Snake Black</h3>
+					<div class="price">Php 4,000.00</div>
+				</article>
+
+				<article class="product">
+					<img src="kobe 6 statue of libertya(4000).jpg" alt="Kobe 6 shoe">
+					<h3>Kobe 5 Protro Statue of the Liberty</h3>
+					<div class="price">Php 4,000.00</div>
+				</article>
+
+				<article class="product">
+					<img src="new balance fuelcell1(3600).jpg" alt="New Balance Fuelcell shoe">
+					<h3>New Balance Fuelcell </h3>
+					<div class="price">Php 3,600.00</div>
+				</article>
+
+				<article class="product">
+					<img src="new balance 1906r1(4000).jpg" alt="New Balance 1906R shoe">
+					<h3>New Balance 1906R</h3>
+					<div class="price">Php 4,000.00</div>
+				</article>
+
+				<article class="product">
+					<img src="nike dunks steampunk1(3200).jpg" alt="Nike Dunks Steampunk shoe">
+					<h3>Nike Dunks Steampunk</h3>
+					<div class="price">Php 3,200.00</div>
+				</article>
+
+				<article class="product">
+					<img src="Nike Mind 001 black1(3800).png" alt="Nike Mind 001 shoe">
+					<h3>Nike Mind 001 Black</h3>
+					<div class="price">Php 3,800.00</div>
+				</article>
+
+				<article class="product">
+					<img src="nocta hot step 2a(4600).jpg" alt="Nocta Hot Step 2 shoe">
+					<h3>Nocta Hot Step 2</h3>
+					<div class="price">Php 4,600.00</div>
+				</article>
+
+				<article class="product">
+					<img src="on cloud surfer black 1(3800).jpg" alt="On Cloud Surfer shoe">
+					<h3>On Cloud Surfer Black</h3>
+					<div class="price">Php 3,800.00</div>
+				</article>
+
+				<article class="product">
+					<img src="on cloud surfer gray 1(3800).jpg" alt="On Cloud Surfer shoe">
+					<h3>On Cloud Surfer Gray</h3>
+					<div class="price">Php 3,800.00</div>
+				</article>
+
+				<article class="product">
+					<img src="on cloud ultra (yoth)1(3800).jpg" alt="On Cloud Ultra shoe">
+					<h3>On Cloud Ultra Year of the Horse</h3>
+					<div class="price">Php 3,800.00</div>
+				</article>
+
+				<article class="product">
+					<img src="on cloud ultra 1(3800).jpg" alt="On Cloud Ultra shoe">
+					<h3>On Cloud Ultra White Gray</h3>
+					<div class="price">Php 3,800.00</div>
+				</article>
+
+				<article class="product">
+					<img src="onitsuka tokuten 1(3400).png" alt="Onitsuka Tokuten shoe">
+					<h3>Onitsuka Tokuten Red</h3>
+					<div class="price">Php 3,400.00</div>
+				</article>
+
+				<article class="product">
+					<img src="onitsuka 1(3400).jpg" alt="Onitsuka Tokuten shoe">
+					<h3>Onitsuka Tokuten Gray</h3>
+					<div class="price">Php 3,400.00</div>
+				</article>
+
+				<article class="product">
+					<img src="puma lamelo MB 0.5a(2600).jpg" alt="Puma Lamelo MB 0.5 shoe">
+					<h3>Puma Lamelo MB 0.5 </h3>
+					<div class="price">Php 2,600.00</div>
+				</article>
+
+				<article class="product">
+					<img src="p6000a(3600).jpg" alt="Nike P6000 shoe">
+					<h3>Nike P6000 </h3>
+					<div class="price">Php 3,600.00</div>
+				</article>
+
+				<article class="product">
+					<img src="p6000a(3600).jpg" alt="Nike P6000 shoe">
+					<h3>Nike P6000 </h3>
+					<div class="price">Php 3,600.00</div>
+				</article>
+
+				<article class="product">
+					<img src="p6000d(3600).jpg" alt="Nike P6000 shoe">
+					<h3>Nike P6000 </h3>
+					<div class="price">Php 3,600.00</div>
+				</article>
+
+				<article class="product">
+					<img src="p6000c(3600).jpg" alt="Nike P6000 shoe">
+					<h3>Nike P6000 </h3>
+					<div class="price">Php 3,600.00</div>
+				</article>
+
+				<article class="product">
+					<img src="sb dunk1(3600).jpg" alt="SB Dunk shoe">
+					<h3>SB Dunk  </h3>
+					<div class="price">Php 3,600.00</div>
+				</article>
+
+				<article class="product">
+					<img src="sb dunk2(3600).jpg" alt="SB Dunk shoe">
+					<h3>SB Dunk  </h3>
+					<div class="price">Php 3,600.00</div>
+				</article>
+
+				<article class="product">
+					<img src="sb dunk3(3600).jpg" alt="SB Dunk shoe">
+					<h3>SB Dunk  </h3>
+					<div class="price">Php 3,600.00</div>
+				</article>
+
+				<article class="product">
+					<img src="sb dunk4(3600).jpg" alt="SB Dunk shoe">
+					<h3>SB Dunk  </h3>
+					<div class="price">Php 3,600.00</div>
+				</article>
+
+				<article class="product">
+					<img src="vans vault1(3200).jpg" alt="Vans Vault shoe">
+					<h3>Vans Vault</h3>
+					<div class="price">Php 3,200.00</div>
+				</article>
+
+				<article class="product">
+					<img src="vapor fly 4c(3400).jpg" alt="Vapor Fly 4 shoe">
+					<h3>Vapor Fly 4</h3>
+					<div class="price">Php 3,400.00</div>
+				</article>
+
+				<article class="product">
+					<img src="vapor fly 4b(3400).jpg" alt="Vapor Fly 4 shoe">
+					<h3>Vapor Fly 4</h3>
+					<div class="price">Php 3,400.00</div>
+				</article>
+
+				<article class="product">
+					<img src="vomero 18a(3400).jpg" alt="Vomero 18 shoe">
+					<h3>Vomero 18</h3>
+					<div class="price">Php 3,400.00</div>
+				</article>
+
+			</section>
+		</div>
+	</main>
+	<footer class="site-footer" role="contentinfo" aria-label="Site disclaimer">
+		<div class="disclaimer">
+			Prices and availability are subject to change. Images are for illustration only. Please confirm size, color and availability before purchase. Footwear sold on this website consists of Class A replica products and is not original, licensed or endorsed by the respective brand owners. We are not affiliated with any of the brands listed on this website. All trademarks and brand names are the property of their respective owners. Products are made in indonesia and are offered as affordable alternatives to original branded footwear for customers who appreciate similar styles and design. By purchasing from this website, you acknowledge that you are buying replica products and not original branded items. We do not claim any association with the original brands and are not responsible for any confusion or misrepresentation regarding the nature of the products sold on this website. Shipping fees are shouldered by the buyer and may vary based on location and shipping method. Please contact us for more information on shipping options and costs. Thank you for visiting our website and we hope you find the perfect pair of shoes that suits your style and budget.
+		</div>
+	</footer>
+
+</body>
+</html>
